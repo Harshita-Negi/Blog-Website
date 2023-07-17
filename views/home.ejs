@@ -1,0 +1,15 @@
+<%- include ./partials/header -%> <!-- CHALLENGE 3  ; cHALLENGE 4 ; Two different approaches for including header and footer   -->    
+
+
+<h1>Home</h1>
+<p> <%= homeContent %> </p>
+
+                                     <!-- CHALLENGE 13  console log using traditional for loop -->
+ 
+ <% posts.forEach(function(post){  %>   <!--  CHALLENGE 14  -->
+    <h1> <%= post.title %> </h1>         <!-- CHALLENGE 15  -->
+    <p> <%= post.body.substring(0,100)+"..." %>   <a href="http://localhost:3000/posts/+<%= post.title %> ">Read more</a></p>
+   
+<% }) %>
+
+<%- include ./partials/footer -%>   <!--CHALLENGE 3 ; cHALLENGE 4 -->
